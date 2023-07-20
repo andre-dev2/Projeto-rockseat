@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--bg-url) no-repeat top center/cover;
+    color: var(--text-color);
+}
+body * {
+    font-family: "inter", sans-serif;
+    color: var(--bg-url);
+}
+#container{
+    width:360px;
+    margin:56px auto 0;
+    padding: 0 24px;
+}
+#profile{
+    text-align:center;
+}
+#profile img {
+    width: 112px;
+}
+p{
+    font-weight: 500;
+    line-height:24px;
+    margin:8px;
+}
+#switch{
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+}
+#switch button{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border: 0;
+    border-radius: 50%;
+    background: white var(--image-button) no-repeat center;
+    position: absolute;
+    z-index: 1;
+    left:0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.light #switch button{
+    right: 0;
+    left: initial;
+}
+#switch span{
+    border-radius: 9999px;
+    display: block;
+    width: 62px;
+    height: 24px;
+    background: var(--surface-color);
+    border: solid 1px var(--stroke-color);
+}
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 0;
+}
+ul li a{
+    text-decoration:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 24px;
+    background-color:var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+ul li a:hover{
+    background-color:var(--surface-color-hover);
+    border: 1px solid var(--stroke-color);
+}
+#social-links{
+    display: flex;
+    gap: 16px;
+    padding: 24px 0;
+    font-size: 24px;
+    justify-content: center;
+}
+#social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+#social-links a:hover{
+    padding: 16px;
+    background-color:var(--hightlight-color);
+    border-radius: 50%;
+}
+
+:root{
+  --text-color: white;
+  --bg-url:url(./assets/bg-mobile.jpg);
+  --stroke-color:rgba(255, 255, 255, 0.5);
+  --surface-color:rgba(255, 255, 255, 0.05);
+  --surface-color-hover:rgba(0, 0, 0, 0.02);
+  --hightlight-color:rgba(255, 255, 255, 0.2);
+  --image-button:url(./assets/moon-stars.svg);
+}
+.light{
+  --text-color:black;
+  --bg-url:url(./assets/bg-mobile-light.jpg);
+  --stroke-color:rgba(0, 0, 0, 0.5);
+  --surface-color:rgba(0, 0, 0, 0.05); 
+  --surface-color-hover:rgba(0, 0, 0, 0.02); 
+  --hightlight-color:rgba(0, 0, 0, 0.1);
+  --image-button:url(./assets/sun.svg);
+}
+
+footer{
+  padding: 24px 0;
+  text-align: center;
+  font-size: 14px;
+}
+#tema{
+    padding: 10px;
+}
